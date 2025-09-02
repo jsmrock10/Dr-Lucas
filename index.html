@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Storytelling Suit Designer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Design Your Storytelling Suit</h1>
+  </header>
+  <main>
+    <section id="fabric-selection">
+      <h2>Select Fabric</h2>
+      <div class="fabric-options">
+        <label>
+          <input type="radio" name="fabric" value="wool" checked />
+          <img src="https://via.placeholder.com/100?text=Wool" alt="Wool Fabric" />
+          Wool
+        </label>
+        <label>
+          <input type="radio" name="fabric" value="cotton" />
+          <img src="https://via.placeholder.com/100?text=Cotton" alt="Cotton Fabric" />
+          Cotton
+        </label>
+        <label>
+          <input type="radio" name="fabric" value="silk" />
+          <img src="https://via.placeholder.com/100?text=Silk" alt="Silk Fabric" />
+          Silk
+        </label>
+      </div>
+    </section>
+
+    <section id="lining-design">
+      <h2>Design Your Lining</h2>
+      <p>Select an image to use as your custom lining.</p>
+      <input type="file" id="lining-input" accept="image/*" />
+      <div id="lining-preview"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
