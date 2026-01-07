@@ -1,0 +1,15 @@
+[build]
+  command = "npm run build:all"
+  publish = "client/dist"
+
+[[redirects]]
+  from = "/api/*"
+  to = "http://localhost:5000/api/:splat"
+  status = 200
+  force = false
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
